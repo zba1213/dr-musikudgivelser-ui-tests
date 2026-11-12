@@ -13,4 +13,4 @@ $env:FRONTEND_URL = "https://dit-frontend-hostnavn"
 dotnet test MusicRecords.UiTests.sln
 ```
 
-Testen åbner Chrome i baggrunden, venter på tre synlige rækker og kontrollerer de fire viste felter for hver udgivelse.
+Testene åbner Chrome i baggrunden. Den ene kontrollerer, at alle udgivelser vises. Den anden søger på titel og kunstner, kontrollerer beskeden ved nul match og nulstiller. Begge venter eksplicit på, at siden viser det forventede resultat.
